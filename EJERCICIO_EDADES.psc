@@ -1,20 +1,31 @@
 Algoritmo EJERCICIO_EDAD
 	//Ejercicio 1º de Pseint - Leer dos edades y mostrarlas//
-	Definir edad1, edad2, aux Como Entero
-	edad1 = -1
-	edad2 = -1
+	Definir edadJuan, edadJose, aux Como Entero
+	edadJuan = -1
+	edadJose = -1
 	aux = -1
 	
-	Escribir "Dime la primera edad "
-	Leer edad1
-	Escribir "Dime la segunda edad"
-	Leer edad2
+	Escribir "Dime la  edad de Juan "
+	Leer edadJuan
+	Escribir "Dime la  edad de Jose"
+	Leer edadJose
 	
 	//Intercambio de variable//
-	aux=edad1
-	edad1=edad2
-	edad2=aux
-	Escribir "La primera edad es " edad1 " y la segunda edad es " edad2
+	aux=edadJuan
+	edadJuan=edadJose
+	edadJose=aux
+	
+	Si edadJuan >=18 Entonces
+		Escribir "La edad de Juan es ", edadJuan, " ,es mayor de edad"
+	SiNo
+		Escribir "La edad de Juan es ", edadJuan, " ,es menor de edad"
+	Fin Si
+	
+	Si edadJose >=18 Entonces
+		Escribir "La edad de Jose es ", edadJose, " ,es mayor de edad"
+	SiNo
+		Escribir "La edad de Jose es ", edadJose, " ,es menor de edad"
+	Fin Si
 	
 	
 FinAlgoritmo
